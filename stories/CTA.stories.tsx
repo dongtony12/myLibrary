@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { Button } from '../src/components/Button/styles'
+import { CTAButton } from '../src/components/CTA/styles'
 
 export default {
   argTypes: {
@@ -17,15 +17,15 @@ export default {
       options: ['primary', 'secondary', 'territory'],
     },
   },
-  component: Button,
+  component: CTAButton,
   title: 'Common/Button',
-} as ComponentMeta<typeof Button>
+} as ComponentMeta<typeof CTAButton>
 
-const Template: ComponentStory<typeof Button> = (args) => (
-  <Button {...args}>{args.children}</Button>
+const Template: ComponentStory<typeof CTAButton> = (args) => (
+  <CTAButton {...args}>{args.children}</CTAButton>
 )
 
-export const button = Template.bind({})
-button.args = {
+export const CTAbutton = Template.bind({})
+CTAbutton.args = {
   children: '구매하기',
 }

@@ -12,9 +12,12 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module CommonJs --outDir dist/cjs",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=8493fa226a0a"
   },
-  "author": "dongtony12",
+  "author": {
+    "name": "dongtony12"
+  },
   "license": "MIT",
   "dependencies": {
     "@stitches/react": "^1.2.8",
@@ -33,6 +36,7 @@
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
     "@storybook/addon-links": "^6.5.12",
+    "@storybook/addon-viewport": "^6.5.12",
     "@storybook/builder-webpack4": "^6.5.12",
     "@storybook/manager-webpack4": "^6.5.12",
     "@storybook/react": "^6.5.12",
@@ -40,6 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "babel-loader": "^8.2.5",
+    "chromatic": "^6.10.5",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -57,5 +62,7 @@
     "react-dom": "^18.1.0"
   },
   "prettier": "@doublenc-inc/prettier-config",
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.2.4",
+  "readme": "ERROR: No README data found!",
+  "_id": "@dongtony/library_test@0.0.1"
 }

@@ -23,14 +23,14 @@ export const colors = {
 }
 
 const fontSizes = {
-  '28': '2.8rem',
-  '24': '2.4rem',
-  '20': '2rem',
-  '18': '1.8rem',
-  '16': '1.6rem',
-  '14': '1.4rem',
-  '12': '1.2rem',
-  '10': '1rem',
+  '28': '28px',
+  '24': '24px',
+  '20': '20px',
+  '18': '18px',
+  '16': '16px',
+  '14': '14px',
+  '12': '12px',
+  '10': '10px',
 }
 
 const fontWeights = {
@@ -41,28 +41,23 @@ const fontWeights = {
   Thin: 100,
 }
 
-const space = {
-  '1': '0.1rem',
-  '2': '0.2rem',
-  '4': '0.4rem',
-  '6': '0.6rem',
-  '8': '0.8rem',
-  '10': '1rem',
-  '12': '1.2rem',
-  '14': '1.4rem',
-  '15': '1.5rem',
-  '16': '1.6rem',
-  '18': '1.8rem',
-  '20': '2rem',
-  '24': '2.4rem',
-  '26': '2.6rem',
-  '28': '2.8rem',
-  '30': '3rem',
-
-  mobileMax: '45rem',
-  locationSearchHeaderHeight: '10rem',
-  navigationHeaderHeight: '4.8rem',
-  bottomNavigationHeight: '8rem',
+const size = {
+  '1': '1px',
+  '2': '2px',
+  '4': '4px',
+  '6': '6px',
+  '8': '8px',
+  '10': '10px',
+  '12': '12px',
+  '14': '14px',
+  '15': '15px',
+  '16': '16px',
+  '18': '18px',
+  '20': '20px',
+  '24': '24px',
+  '26': '26px',
+  '28': '28px',
+  '30': '30px',
 }
 
 export const {
@@ -79,9 +74,8 @@ export const {
     colors,
     fontSizes,
     fontWeights,
-    space,
-    sizes: space,
-    radii: space,
+    sizes: size,
+    radii: size,
   },
   utils: {
     m: (value: PropertyValue<'margin'>) => ({

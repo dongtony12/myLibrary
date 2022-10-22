@@ -1,6 +1,9 @@
 import { styled } from '../../styles/stitches.config'
 
-const buttonVariants = styled('button', {
+/**
+ * TODO: width and height should be dynamic
+ */
+const CTAButtonVariants = styled('button', {
   defaultVariants: {
     size: 'large',
     type: 'primary',
@@ -10,16 +13,16 @@ const buttonVariants = styled('button', {
       large: {
         fontSize: '$16',
         fontWeight: '$bold',
-        width: '119px',
-        height: '50px',
+        width: '100%',
+        height: '52px',
         px: '30px',
         py: '$14',
       },
       medium: {
         fontSize: '$14',
         fontWeight: '$bold',
-        width: '92px',
-        height: '40px',
+        width: '283px',
+        height: '52px',
         px: '$20',
         py: '$10',
       },
@@ -30,14 +33,6 @@ const buttonVariants = styled('button', {
         height: '32px',
         px: '$12',
         py: '$6',
-      },
-      XSmall: {
-        fontSize: '$12',
-        fontWeight: '$bold',
-        width: '61px',
-        height: '25px',
-        px: '$8',
-        py: '$4',
       },
     },
     type: {
@@ -71,27 +66,11 @@ const buttonVariants = styled('button', {
         borderColor: '#ebebeb',
         color: '$main01',
       },
-      territory: {
-        '&:active': {
-          backgroundColor: '$main03',
-          borderColor: '$main01',
-          color: '$main01',
-        },
-        '&:disabled': {
-          backgroundColor: '#F5F5F5',
-          borderColor: '#DFDFDF',
-          color: '$gray06',
-        },
-        backgroundColor: '$main03',
-        borderColor: '$main01',
-        color: '$main01',
-      },
-      quaternary: {},
     },
   },
 })
 
-export const Button = styled(buttonVariants, {
+export const CTAButton = styled(CTAButtonVariants, {
   alignItems: 'center',
   borderRadius: '$10',
   borderStyle: 'solid',
