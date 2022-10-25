@@ -1,6 +1,6 @@
 {
   "name": "@dongtony/library_test",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "this is my first react component library for tutorial",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
