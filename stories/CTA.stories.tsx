@@ -10,11 +10,11 @@ export default {
     },
     size: {
       control: { type: 'radio' },
-      options: ['large', 'medium', 'small', 'XSmall'],
+      options: ['large', 'medium', 'small'],
     },
     type: {
       control: { type: 'select' },
-      options: ['primary', 'secondary', 'territory'],
+      options: ['primary', 'secondary'],
     },
   },
   component: CTAButton,
@@ -22,7 +22,9 @@ export default {
 } as ComponentMeta<typeof CTAButton>
 
 const Template: ComponentStory<typeof CTAButton> = (args) => (
-  <CTAButton {...args}>{args.children}</CTAButton>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <CTAButton {...args}>{args.children}</CTAButton>
+  </div>
 )
 
 export const CTAbutton = Template.bind({})

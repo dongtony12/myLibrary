@@ -22,7 +22,9 @@ export default {
 } as ComponentMeta<typeof Button>
 
 const Template: ComponentStory<typeof Button> = (args) => (
-  <Button {...args}>{args.children}</Button>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <Button {...args}>{args.children}</Button>
+  </div>
 )
 
 export const button = Template.bind({})
